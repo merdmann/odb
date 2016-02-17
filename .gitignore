@@ -1,2 +1,7 @@
 *.ali
 *.o
+lib/*
+*.db
+*.lexch
+*.a
+*.cgpr
