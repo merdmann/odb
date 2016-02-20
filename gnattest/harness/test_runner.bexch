@@ -1,0 +1,34 @@
+[GENERATED OBJECT FILE]
+b__test_runner.o
+[PROJECT FILES]
+C:\Users\merdmann\Sources\odb\gnattest\harness\test_driver.gpr
+20160217205026
+C:\Users\merdmann\Sources\odb\gnattest\harness\gnattest_common.gpr
+20160217205026
+C:\Users\merdmann\Sources\odb\odb.gpr
+20160217204740
+C:\Users\merdmann\Sources\odb\gnattest\harness\test_odb.gpr
+20160217205026
+C:\gnat\2015\lib\gnat\aunit.gpr
+20150518132152
+[BOUND OBJECT FILES]
+C:\Users\merdmann\Sources\odb\gnattest\harness\gnattest_generated.o
+C:\Users\merdmann\Sources\odb\gnattest\harness\test_runner.o
+C:\Users\merdmann\Sources\odb\gnattest\harness\odb-persistent_type_test_data.o
+C:\Users\merdmann\Sources\odb\gnattest\harness\odb-persistent_type_test_data-persistent_type_tests.o
+C:\Users\merdmann\Sources\odb\gnattest\harness\odb-persistent_type_test_data-persistent_type_tests-suite.o
+C:\Users\merdmann\Sources\odb\gnattest\harness\gnattest_main_suite.o
+[GENERATED SOURCE FILES]
+b__test_runner.ads
+b__test_runner.adb
+b__test_runner.ali
+[RESULTING OPTIONS]
+-LC:\Users\merdmann\Sources\odb\gnattest\harness\
+-LC:\Users\merdmann\Sources\odb\gnattest\harness\
+-LC:\gnat\2015\lib\aunit\
+-LC:\Users\merdmann\Sources\odb\lib\
+-LC:/gnat/2015/lib/gcc/i686-pc-mingw32/4.9.3/adalib/
+-static
+-static-libgcc
+C:/gnat/2015/lib/gcc/i686-pc-mingw32/4.9.3/adalib/libgnat.a
+-Wl,--stack=0x2000000

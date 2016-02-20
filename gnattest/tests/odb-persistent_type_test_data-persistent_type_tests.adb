@@ -20,7 +20,10 @@ package body odb.Persistent_Type_Test_Data.Persistent_Type_Tests is
 
       pragma Unreferenced (Gnattest_T);
 
+      item : Persistent_Access := new Persistent_Type;
    begin
+
+      item := new Persistent_Type;
 
       AUnit.Assertions.Assert
         (Gnattest_Generated.Default_Assert_Value,
