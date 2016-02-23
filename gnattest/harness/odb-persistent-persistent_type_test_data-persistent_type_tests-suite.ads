@@ -4,9 +4,9 @@
 --  begin read only
 with AUnit.Test_Suites;
 
-package odb.Persistent_Type_Test_Data.Persistent_Type_Tests.Suite is
+package ODB.Persistent.Persistent_Type_Test_Data.Persistent_Type_Tests.Suite is
 
    function Suite return AUnit.Test_Suites.Access_Test_Suite;
 
-end odb.Persistent_Type_Test_Data.Persistent_Type_Tests.Suite;
+end ODB.Persistent.Persistent_Type_Test_Data.Persistent_Type_Tests.Suite;
 --  end read only

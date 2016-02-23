@@ -84,214 +84,220 @@ package body ada_main is
          E242 := E242 - 1;
          F1;
       end;
-      E240 := E240 - 1;
       declare
          procedure F2;
-         pragma Import (Ada, F2, "odb__persistent__test_data__tests__finalize_spec");
+         pragma Import (Ada, F2, "odb__persistent__test_data__tests__finalize_body");
       begin
+         E240 := E240 - 1;
          F2;
       end;
-      E238 := E238 - 1;
       declare
          procedure F3;
-         pragma Import (Ada, F3, "odb__persistent__test_data__finalize_spec");
+         pragma Import (Ada, F3, "odb__persistent__test_data__tests__finalize_spec");
       begin
          F3;
       end;
+      E238 := E238 - 1;
       declare
          procedure F4;
-         pragma Import (Ada, F4, "odb__persistent__persistent_type_test_data__persistent_type_tests__suite__finalize_body");
+         pragma Import (Ada, F4, "odb__persistent__test_data__finalize_spec");
+      begin
+         F4;
+      end;
+      declare
+         procedure F5;
+         pragma Import (Ada, F5, "odb__persistent__persistent_type_test_data__persistent_type_tests__suite__finalize_body");
       begin
          E236 := E236 - 1;
-         F4;
+         F5;
       end;
       E234 := E234 - 1;
       declare
-         procedure F5;
-         pragma Import (Ada, F5, "odb__persistent__persistent_type_test_data__persistent_type_tests__finalize_spec");
-      begin
-         F5;
-      end;
-      declare
          procedure F6;
-         pragma Import (Ada, F6, "odb__persistent__persistent_type_test_data__finalize_body");
+         pragma Import (Ada, F6, "odb__persistent__persistent_type_test_data__persistent_type_tests__finalize_spec");
       begin
-         E232 := E232 - 1;
          F6;
       end;
       declare
          procedure F7;
-         pragma Import (Ada, F7, "odb__persistent__persistent_type_test_data__finalize_spec");
+         pragma Import (Ada, F7, "odb__persistent__persistent_type_test_data__finalize_body");
       begin
+         E232 := E232 - 1;
          F7;
       end;
-      E222 := E222 - 1;
       declare
          procedure F8;
-         pragma Import (Ada, F8, "odb__persistent__finalize_spec");
+         pragma Import (Ada, F8, "odb__persistent__persistent_type_test_data__finalize_spec");
       begin
          F8;
       end;
+      E222 := E222 - 1;
       declare
          procedure F9;
-         pragma Import (Ada, F9, "odb__object_id__test_data__tests__suite__finalize_body");
+         pragma Import (Ada, F9, "odb__persistent__finalize_spec");
+      begin
+         F9;
+      end;
+      declare
+         procedure F10;
+         pragma Import (Ada, F10, "odb__object_id__test_data__tests__suite__finalize_body");
       begin
          E220 := E220 - 1;
-         F9;
+         F10;
       end;
       E218 := E218 - 1;
       declare
-         procedure F10;
-         pragma Import (Ada, F10, "odb__object_id__test_data__tests__finalize_spec");
-      begin
-         F10;
-      end;
-      E216 := E216 - 1;
-      declare
          procedure F11;
-         pragma Import (Ada, F11, "odb__object_id__test_data__finalize_spec");
+         pragma Import (Ada, F11, "odb__object_id__test_data__tests__finalize_spec");
       begin
          F11;
       end;
+      E216 := E216 - 1;
       declare
          procedure F12;
-         pragma Import (Ada, F12, "odb__chunk__test_data__tests__suite__finalize_body");
+         pragma Import (Ada, F12, "odb__object_id__test_data__finalize_spec");
+      begin
+         F12;
+      end;
+      declare
+         procedure F13;
+         pragma Import (Ada, F13, "odb__chunk__test_data__tests__suite__finalize_body");
       begin
          E212 := E212 - 1;
-         F12;
+         F13;
       end;
       E210 := E210 - 1;
       declare
-         procedure F13;
-         pragma Import (Ada, F13, "odb__chunk__test_data__tests__finalize_spec");
-      begin
-         F13;
-      end;
-      E206 := E206 - 1;
-      declare
          procedure F14;
-         pragma Import (Ada, F14, "odb__chunk__test_data__finalize_spec");
+         pragma Import (Ada, F14, "odb__chunk__test_data__tests__finalize_spec");
       begin
          F14;
       end;
-      E162 := E162 - 1;
+      E206 := E206 - 1;
       declare
          procedure F15;
-         pragma Import (Ada, F15, "aunit__test_suites__finalize_spec");
+         pragma Import (Ada, F15, "odb__chunk__test_data__finalize_spec");
       begin
          F15;
       end;
-      E208 := E208 - 1;
+      E162 := E162 - 1;
       declare
          procedure F16;
-         pragma Import (Ada, F16, "aunit__test_fixtures__finalize_spec");
+         pragma Import (Ada, F16, "aunit__test_suites__finalize_spec");
       begin
          F16;
+      end;
+      E208 := E208 - 1;
+      declare
+         procedure F17;
+         pragma Import (Ada, F17, "aunit__test_fixtures__finalize_spec");
+      begin
+         F17;
       end;
       E063 := E063 - 1;
       E065 := E065 - 1;
       declare
-         procedure F17;
-         pragma Import (Ada, F17, "aunit__simple_test_cases__finalize_spec");
-      begin
-         F17;
-      end;
-      E154 := E154 - 1;
-      declare
          procedure F18;
-         pragma Import (Ada, F18, "aunit__reporter__gnattest__finalize_spec");
+         pragma Import (Ada, F18, "aunit__simple_test_cases__finalize_spec");
       begin
          F18;
       end;
-      E067 := E067 - 1;
+      E154 := E154 - 1;
       declare
          procedure F19;
-         pragma Import (Ada, F19, "aunit__assertions__finalize_spec");
+         pragma Import (Ada, F19, "aunit__reporter__gnattest__finalize_spec");
       begin
          F19;
       end;
-      E074 := E074 - 1;
+      E067 := E067 - 1;
       declare
          procedure F20;
-         pragma Import (Ada, F20, "aunit__test_results__finalize_spec");
+         pragma Import (Ada, F20, "aunit__assertions__finalize_spec");
       begin
          F20;
       end;
+      E074 := E074 - 1;
       declare
          procedure F21;
-         pragma Import (Ada, F21, "aunit__test_filters__finalize_spec");
+         pragma Import (Ada, F21, "aunit__test_results__finalize_spec");
       begin
          F21;
       end;
       declare
          procedure F22;
-         pragma Import (Ada, F22, "aunit__tests__finalize_spec");
+         pragma Import (Ada, F22, "aunit__test_filters__finalize_spec");
+      begin
+         F22;
+      end;
+      declare
+         procedure F23;
+         pragma Import (Ada, F23, "aunit__tests__finalize_spec");
       begin
          E087 := E087 - 1;
-         F22;
+         F23;
       end;
       E178 := E178 - 1;
       declare
-         procedure F23;
-         pragma Import (Ada, F23, "ada__text_io__finalize_spec");
-      begin
-         F23;
-      end;
-      E195 := E195 - 1;
-      declare
          procedure F24;
-         pragma Import (Ada, F24, "system__regexp__finalize_spec");
+         pragma Import (Ada, F24, "ada__text_io__finalize_spec");
       begin
          F24;
       end;
-      E169 := E169 - 1;
+      E195 := E195 - 1;
       declare
          procedure F25;
-         pragma Import (Ada, F25, "ada__strings__unbounded__finalize_spec");
+         pragma Import (Ada, F25, "system__regexp__finalize_spec");
       begin
          F25;
       end;
+      E169 := E169 - 1;
       declare
          procedure F26;
-         pragma Import (Ada, F26, "system__object_reader__finalize_body");
+         pragma Import (Ada, F26, "ada__strings__unbounded__finalize_spec");
       begin
-         E142 := E142 - 1;
          F26;
       end;
       declare
          procedure F27;
-         pragma Import (Ada, F27, "system__file_io__finalize_body");
+         pragma Import (Ada, F27, "system__object_reader__finalize_body");
+      begin
+         E142 := E142 - 1;
+         F27;
+      end;
+      declare
+         procedure F28;
+         pragma Import (Ada, F28, "system__file_io__finalize_body");
       begin
          E180 := E180 - 1;
-         F27;
+         F28;
       end;
       E089 := E089 - 1;
       E171 := E171 - 1;
       E230 := E230 - 1;
       declare
-         procedure F28;
-         pragma Import (Ada, F28, "system__pool_size__finalize_spec");
-      begin
-         F28;
-      end;
-      E106 := E106 - 1;
-      declare
          procedure F29;
-         pragma Import (Ada, F29, "system__pool_global__finalize_spec");
+         pragma Import (Ada, F29, "system__pool_size__finalize_spec");
       begin
          F29;
       end;
+      E106 := E106 - 1;
       declare
          procedure F30;
-         pragma Import (Ada, F30, "system__storage_pools__subpools__finalize_spec");
+         pragma Import (Ada, F30, "system__pool_global__finalize_spec");
       begin
          F30;
       end;
       declare
          procedure F31;
-         pragma Import (Ada, F31, "system__finalization_masters__finalize_spec");
+         pragma Import (Ada, F31, "system__storage_pools__subpools__finalize_spec");
       begin
          F31;
+      end;
+      declare
+         procedure F32;
+         pragma Import (Ada, F32, "system__finalization_masters__finalize_spec");
+      begin
+         F32;
       end;
       declare
          procedure Reraise_Library_Exception_If_Any;
@@ -510,6 +516,7 @@ package body ada_main is
       ODB.PERSISTENT.TEST_DATA'ELAB_SPEC;
       E238 := E238 + 1;
       ODB.PERSISTENT.TEST_DATA.TESTS'ELAB_SPEC;
+      ODB.PERSISTENT.TEST_DATA.TESTS'ELAB_BODY;
       E240 := E240 + 1;
       ODB.PERSISTENT.TEST_DATA.TESTS.SUITE'ELAB_BODY;
       E242 := E242 + 1;
@@ -550,25 +557,25 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   H:\MIchael\Sources\odb\gnattest\harness\gnattest_generated.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\test_runner.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-chunk-test_data.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-chunk-test_data-tests.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-chunk-test_data-tests-suite.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-object_id-test_data.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-object_id-test_data-tests.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-object_id-test_data-tests-suite.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-persistent-persistent_type_test_data.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-persistent-persistent_type_test_data-persistent_type_tests.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-persistent-persistent_type_test_data-persistent_type_tests-suite.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-persistent-test_data.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-persistent-test_data-tests.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\odb-persistent-test_data-tests-suite.o
-   --   H:\MIchael\Sources\odb\gnattest\harness\gnattest_main_suite.o
-   --   -LH:\MIchael\Sources\odb\gnattest\harness\
-   --   -LH:\MIchael\Sources\odb\gnattest\harness\
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\gnattest_generated.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\test_runner.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-chunk-test_data.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-chunk-test_data-tests.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-chunk-test_data-tests-suite.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-object_id-test_data.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-object_id-test_data-tests.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-object_id-test_data-tests-suite.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-persistent-persistent_type_test_data.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-persistent-persistent_type_test_data-persistent_type_tests.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-persistent-persistent_type_test_data-persistent_type_tests-suite.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-persistent-test_data.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-persistent-test_data-tests.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\odb-persistent-test_data-tests-suite.o
+   --   H:\MIchael\Sources\odb\gnattest\harness\debug\gnattest_main_suite.o
+   --   -LH:\MIchael\Sources\odb\gnattest\harness\debug\
+   --   -LH:\MIchael\Sources\odb\gnattest\harness\debug\
    --   -LC:\gnat\2015\lib\aunit\
-   --   -LH:\MIchael\Sources\odb\lib\
+   --   -LH:\MIchael\Sources\odb\lib\debug\
    --   -LC:/gnat/2015/lib/gcc/i686-pc-mingw32/4.9.3/adalib/
    --   -static
    --   -lgnat

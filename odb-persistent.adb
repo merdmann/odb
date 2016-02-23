@@ -8,9 +8,13 @@ with System.Address_To_Access_Conversions;
 
 
 with ODB.Object_Id; use ODB.Object_Id;
+with ODB.Chunk;  use ODB.Chunk;
 
-package body odb is
+package body ODB.Persistent is
 
+   ----------------
+   -- Chunk_Type --
+   ----------------
    type Chunk_Type( Size : Storage_Offset ) is record
       Id   : Object_Id_Type := Id_Not_Used;
       Data : Storage_Array( 1 .. Size );
@@ -24,8 +28,8 @@ package body odb is
    -- Storage_Control_Type --
    --------------------------
    type Storage_Control_Type is record
-      Id : Object_Id_Type := Id_Not_Used;
-      Data : Address;
+      Id    : Object_Id_Type := Id_Not_Used;
+      Chunk : Chunk_Access;
    end record;
 
    type Storage_Control_Array is array( 1..2000 ) of Storage_Control_Type;
@@ -49,19 +53,38 @@ package body odb is
       return Result;
    end Allocate_SCB;
 
-   function Deallocate_SCB( Addr : in Address ) return Natural is
+   --------------
+   -- Find_SCB --
+   --------------
+   function Find_SCB( Addr : in Address ) return Natural is
       Result : Natural := 0;
    begin
-         return Result;
-   end Deallocate_SCB;
+      for i in Storage_Control_Array'Range loop
+         if SCB(i).Chunk.Data(1)'Address = Addr then
+           Result := i;
+           exit;
+         end if;
+      end loop;
 
+      return Result;
+   end Find_SCB;
+
+
+   -------------------
+   -- Get_Object_Id --
+   -------------------
+   function Get_Object_Id( Item : in Persistent_Type'Class ) return Object_Id_Type is
+      Index : Natural := 1;
+   begin
+      return SCB(Index).Id;
+   end Get_Object_Id;
 
    ----------------
    -- Initialize --
    ----------------
    procedure Initialize( This : in out Persistent_Type ) is
    begin
-      null;
+      Put_Line("Persisten_Type: Initialize");
    end Initialize;
 
    --------------
@@ -69,10 +92,8 @@ package body odb is
    --------------
    procedure Finalize( This : in out Persistent_Type ) is
    begin
-      null;
+      Put_Line("Persisten_Type: Finalize");
    end Finalize;
-
-   -- this manages the storage where the objects lives in
 
    --------------
    -- Allocate --
@@ -84,16 +105,17 @@ package body odb is
       Alignment         : in     Storage_Count ) is
 
       Id : Natural := 0;
+      Chunk : Chunk_Access := new Chunk_Type(Storage_Offset( Size ));
    begin
       Put_Line(
          "Count: " & Storage_Count'Image(Size) &
                  " Alignment: " & Storage_Count'Image(Alignment));
 
-      Storage_Address := T.To_Address( new Chunk_Type( Storage_Offset(Size) ));
+      Storage_Address := Chunk.Data(1)'Address;
 
       Id := Allocate_SCB;
-      SCB(Id).Data := Storage_Address;
-
+      Chunk.Id := New_Object_Id(id);
+      SCB(Id).Chunk := Chunk;
    end Allocate;
 
    ----------------
@@ -105,9 +127,7 @@ package body odb is
       Size            : in     Storage_Count;
       Alignment       : in     Storage_Count ) is
    begin
-
       null;
-
    end Deallocate;
 
    function Storage_Size (
@@ -116,4 +136,4 @@ package body odb is
       return Storage_Count(0);
    end Storage_Size;
 
-end odb;
+end ODB.Persistent;

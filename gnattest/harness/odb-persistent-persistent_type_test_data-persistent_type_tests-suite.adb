@@ -5,10 +5,10 @@
 with AUnit.Test_Caller;
 with Gnattest_Generated;
 
-package body odb.Persistent_Type_Test_Data.Persistent_Type_Tests.Suite is
+package body ODB.Persistent.Persistent_Type_Test_Data.Persistent_Type_Tests.Suite is
 
    package Runner_1 is new AUnit.Test_Caller
-     (GNATtest_Generated.GNATtest_Standard.odb.Persistent_Type_Test_Data.Persistent_Type_Tests.Test_Persistent_Type);
+     (GNATtest_Generated.GNATtest_Standard.ODB.Persistent.Persistent_Type_Test_Data.Persistent_Type_Tests.Test_Persistent_Type);
 
    Result : aliased AUnit.Test_Suites.Test_Suite;
 
@@ -20,11 +20,11 @@ package body odb.Persistent_Type_Test_Data.Persistent_Type_Tests.Suite is
 
       Runner_1.Create
         (Case_1_1_Test_Initialize_752cc6,
-         "odb.ads:18:4:",
+         "odb-persistent.ads:21:4:",
          Test_Initialize_752cc6'Access);
       Runner_1.Create
         (Case_2_1_Test_Finalize_1d29f1,
-         "odb.ads:19:4:",
+         "odb-persistent.ads:22:4:",
          Test_Finalize_1d29f1'Access);
 
       Result.Add_Test (Case_1_1_Test_Initialize_752cc6'Access);
@@ -34,5 +34,5 @@ package body odb.Persistent_Type_Test_Data.Persistent_Type_Tests.Suite is
 
    end Suite;
 
-end odb.Persistent_Type_Test_Data.Persistent_Type_Tests.Suite;
+end ODB.Persistent.Persistent_Type_Test_Data.Persistent_Type_Tests.Suite;
 --  end read only

@@ -1,26 +1,70 @@
 <?xml version="1.0"?>
-<Locations>
-  <Project>
-    <vfs_file />
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\merdmann\Sources\odb\odb.gpr</vfs_file>
+<Locations >
+  <Project >
+    <vfs_file >H:\MIchael\Sources\odb\odb.gpr</vfs_file>
+    <file_marker column=" 39" line=" 10">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb-persistent.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 24" line=" 4" >
-      <vfs_project />
-      <vfs_file>C:\Users\merdmann\Sources\odb\odb.gpr</vfs_file>
+    <file_marker column=" 23" line=" 10">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb-chunk.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 9" >
-      <vfs_project />
-      <vfs_file>C:\Users\merdmann\Sources\odb\odb.gpr</vfs_file>
+    <file_marker current="true" column=" 39" line=" 10">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb-persistent.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Users\merdmann\Sources\odb\odb.adb</vfs_file>
+  </Project>
+  <Project >
+    <file_marker column=" 39" line=" 10" >
+      <vfs_project>H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file>H:\MIchael\Sources\odb\odb-persistent.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 24" line=" 4" >
-      <vfs_project />
-      <vfs_file>C:\Users\merdmann\Sources\odb\odb.gpr</vfs_file>
+    <file_marker column=" 1" line=" 10" >
+      <vfs_project>H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file>H:\MIchael\Sources\odb\odb-chunk.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 39" line=" 10" >
+      <vfs_project>H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file>H:\MIchael\Sources\odb\odb-persistent.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 76">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 70">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 69" line=" 15">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 8">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 69" line=" 15">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 12">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 7">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 39" line=" 10">
+      <vfs_project >H:\MIchael\Sources\odb\odb.gpr</vfs_project>
+      <vfs_file >H:\MIchael\Sources\odb\odb.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>

@@ -8,9 +8,9 @@ with AUnit.Test_Fixtures;
 
 with GNATtest_Generated;
 
-package odb.Persistent_Type_Test_Data is
+package ODB.Persistent.Persistent_Type_Test_Data is
 
-   type Persistent_Type_Access is access all GNATtest_Generated.GNATtest_Standard.odb.Persistent_Type'Class;
+   type Persistent_Type_Access is access all GNATtest_Generated.GNATtest_Standard.ODB.Persistent.Persistent_Type'Class;
 
 --  begin read only
    type Test_Persistent_Type is new AUnit.Test_Fixtures.Test_Fixture
@@ -22,4 +22,4 @@ package odb.Persistent_Type_Test_Data is
    procedure Set_Up (Gnattest_T : in out Test_Persistent_Type);
    procedure Tear_Down (Gnattest_T : in out Test_Persistent_Type);
 
-end odb.Persistent_Type_Test_Data;
+end ODB.Persistent.Persistent_Type_Test_Data;

@@ -3,11 +3,11 @@
 --  Such changes will be kept during further regeneration of this file.
 --  All code placed outside of test routine bodies will be lost. The
 --  code intended to set up and tear down the test environment should be
---  placed into odb.Persistent_Type_Test_Data.
+--  placed into ODB.Persistent.Persistent_Type_Test_Data.
 
 with AUnit.Assertions; use AUnit.Assertions;
 
-package body odb.Persistent_Type_Test_Data.Persistent_Type_Tests is
+package body ODB.Persistent.Persistent_Type_Test_Data.Persistent_Type_Tests is
 
 
 --  begin read only
@@ -15,15 +15,12 @@ package body odb.Persistent_Type_Test_Data.Persistent_Type_Tests is
    procedure Test_Initialize_752cc6 (Gnattest_T : in out Test_Persistent_Type) renames Test_Initialize;
 --  id:2.2/752cc6071261d2b6/Initialize/1/0/
    procedure Test_Initialize (Gnattest_T : in out Test_Persistent_Type) is
-   --  odb.ads:18:4:Initialize
+   --  odb-persistent.ads:21:4:Initialize
 --  end read only
 
       pragma Unreferenced (Gnattest_T);
 
-      item : Persistent_Access := new Persistent_Type;
    begin
-
-      item := new Persistent_Type;
 
       AUnit.Assertions.Assert
         (Gnattest_Generated.Default_Assert_Value,
@@ -39,7 +36,7 @@ package body odb.Persistent_Type_Test_Data.Persistent_Type_Tests is
    procedure Test_Finalize_1d29f1 (Gnattest_T : in out Test_Persistent_Type) renames Test_Finalize;
 --  id:2.2/1d29f15228a8f8f4/Finalize/1/0/
    procedure Test_Finalize (Gnattest_T : in out Test_Persistent_Type) is
-   --  odb.ads:19:4:Finalize
+   --  odb-persistent.ads:22:4:Finalize
 --  end read only
 
       pragma Unreferenced (Gnattest_T);
@@ -54,4 +51,4 @@ package body odb.Persistent_Type_Test_Data.Persistent_Type_Tests is
    end Test_Finalize;
 --  end read only
 
-end odb.Persistent_Type_Test_Data.Persistent_Type_Tests;
+end ODB.Persistent.Persistent_Type_Test_Data.Persistent_Type_Tests;

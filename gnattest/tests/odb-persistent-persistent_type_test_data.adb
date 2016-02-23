@@ -3,9 +3,9 @@
 --  automatically. Contents of this package can be modified in any way
 --  except for sections surrounded by a 'read only' marker.
 
-package body odb.Persistent_Type_Test_Data is
+package body ODB.Persistent.Persistent_Type_Test_Data is
 
-   Local_Persistent_Type : aliased GNATtest_Generated.GNATtest_Standard.odb.Persistent_Type;
+   Local_Persistent_Type : aliased GNATtest_Generated.GNATtest_Standard.ODB.Persistent.Persistent_Type;
    procedure Set_Up (Gnattest_T : in out Test_Persistent_Type) is
    begin
       Gnattest_T.Fixture := Local_Persistent_Type'Access;
@@ -16,4 +16,4 @@ package body odb.Persistent_Type_Test_Data is
       null;
    end Tear_Down;
 
-end odb.Persistent_Type_Test_Data;
+end ODB.Persistent.Persistent_Type_Test_Data;
