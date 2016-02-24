@@ -43,12 +43,22 @@ package body ODB.Object_Id.Test_Data.Tests is
 
       pragma Unreferenced (Gnattest_T);
 
-      Id1 : Object_Id_Type := New_Object_Id(1);
-      Id2 : Object_Id_Type := New_Object_Id(1);
+      The_Index : constant Natural := 22;
+      Id1 : Object_Id_Type := New_Object_Id(The_Index);
+      Id2 : Object_Id_Type := New_Object_Id(The_Index);
    begin
-
+      -- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --
+      -- 0001 : Returns the given index
+      -- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --
       AUnit.Assertions.Assert
-        (Get_Index(Id1) = Get_Index(Id2), "0101 Index is identical");
+        (Get_Index(Id1) = The_Index, "0001 Returns The_Index");
+
+      -- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --
+      -- 0002 : The Index of two objects create with the same index is eq. --
+      -- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --
+      AUnit.Assertions.Assert
+        (Get_Index(Id1) = Get_Index(Id2), "0002 Index is identical");
+
 
 --  begin read only
    end Test_Get_Index;

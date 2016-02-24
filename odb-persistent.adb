@@ -12,18 +12,6 @@ with ODB.Chunk;  use ODB.Chunk;
 
 package body ODB.Persistent is
 
-   ----------------
-   -- Chunk_Type --
-   ----------------
-   type Chunk_Type( Size : Storage_Offset ) is record
-      Id   : Object_Id_Type := Id_Not_Used;
-      Data : Storage_Array( 1 .. Size );
-   end record;
-
-   type Chunk_Access is access Chunk_Type;
-
-   package T is new System.Address_To_Access_Conversions(Chunk_Type);
-
    --------------------------
    -- Storage_Control_Type --
    --------------------------
@@ -60,7 +48,7 @@ package body ODB.Persistent is
       Result : Natural := 0;
    begin
       for i in Storage_Control_Array'Range loop
-         if SCB(i).Chunk.Data(1)'Address = Addr then
+         if Chunk_To_Address( SCB(i).chunk ) = Addr then
            Result := i;
            exit;
          end if;
@@ -75,8 +63,9 @@ package body ODB.Persistent is
    -------------------
    function Get_Object_Id( Item : in Persistent_Type'Class ) return Object_Id_Type is
       Index : Natural := 1;
+      Chunk : Chunk_Access := Address_To_Chunk(Item'Address);
    begin
-      return SCB(Index).Id;
+      return Get_Object_Id( Chunk );
    end Get_Object_Id;
 
    ----------------
@@ -111,10 +100,10 @@ package body ODB.Persistent is
          "Count: " & Storage_Count'Image(Size) &
                  " Alignment: " & Storage_Count'Image(Alignment));
 
-      Storage_Address := Chunk.Data(1)'Address;
+      Storage_Address := Chunk_To_Address(Chunk);
 
       Id := Allocate_SCB;
-      Chunk.Id := New_Object_Id(id);
+      Set_Object_Id( Chunk, New_Object_Id(Id));
       SCB(Id).Chunk := Chunk;
    end Allocate;
 
@@ -135,5 +124,15 @@ package body ODB.Persistent is
    begin
       return Storage_Count(0);
    end Storage_Size;
+
+
+   procedure Dump is
+   begin
+      null;
+   end Dump;
+
+
+begin
+   Put_Line("persistent object");
 
 end ODB.Persistent;

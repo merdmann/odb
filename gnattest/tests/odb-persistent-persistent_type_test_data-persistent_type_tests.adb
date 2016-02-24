@@ -10,6 +10,7 @@ with AUnit.Assertions; use AUnit.Assertions;
 package body ODB.Persistent.Persistent_Type_Test_Data.Persistent_Type_Tests is
 
 
+
 --  begin read only
    procedure Test_Initialize (Gnattest_T : in out Test_Persistent_Type);
    procedure Test_Initialize_752cc6 (Gnattest_T : in out Test_Persistent_Type) renames Test_Initialize;
@@ -20,10 +21,11 @@ package body ODB.Persistent.Persistent_Type_Test_Data.Persistent_Type_Tests is
 
       pragma Unreferenced (Gnattest_T);
 
+
    begin
 
       AUnit.Assertions.Assert
-        (Gnattest_Generated.Default_Assert_Value,
+        (,
          "Test not implemented.");
 
 --  begin read only

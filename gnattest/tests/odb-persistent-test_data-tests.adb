@@ -46,11 +46,19 @@ package body ODB.Persistent.Test_Data.Tests is
       O1 : Persistent_Access := new O_Type;
       O2 : Persistent_Access := new O_Type;
    begin
-      -- The object id of two seperatly allocated objects are different
+      -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --
+      -- The object is identical to it self                               --
+      -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --
       AUnit.Assertions.Assert
-        (Get_Object_Id(O1.all) /= Get_Object_Id(O2.all),
+        (Get_Object_Id(O1.all) = Get_Object_Id(O1.all),
          "1001 Objects are not identical");
 
+      -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --
+      -- The object id of two seperatly allocated objects are different   --
+      -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --
+      AUnit.Assertions.Assert
+        (Get_Object_Id(O1.all) /= Get_Object_Id(O2.all),
+         "1002 Objects are not identical");
 
 
 --  begin read only

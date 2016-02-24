@@ -14,6 +14,7 @@ package ODB.Persistent is
 
    function Get_Object_Id( Item : in Persistent_Type'Class ) return Object_Id_Type;
 
+   procedure Dump;
 
 private
    type Persistent_Type is new Controlled with null record;

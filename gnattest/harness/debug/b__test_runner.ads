@@ -435,9 +435,9 @@ package ada_main is
    pragma Export (C, u00199, "gnattest_main_suiteS");
    u00200 : constant Version_32 := 16#52ee47fb#;
    pragma Export (C, u00200, "odbS");
-   u00201 : constant Version_32 := 16#d04b298c#;
+   u00201 : constant Version_32 := 16#4af1a42d#;
    pragma Export (C, u00201, "odb__chunkB");
-   u00202 : constant Version_32 := 16#744bfc59#;
+   u00202 : constant Version_32 := 16#97268e46#;
    pragma Export (C, u00202, "odb__chunkS");
    u00203 : constant Version_32 := 16#ca632c0b#;
    pragma Export (C, u00203, "odb__object_idB");
@@ -445,7 +445,7 @@ package ada_main is
    pragma Export (C, u00204, "odb__object_idS");
    u00205 : constant Version_32 := 16#9fdcf662#;
    pragma Export (C, u00205, "odb__chunk__test_dataB");
-   u00206 : constant Version_32 := 16#fd19a264#;
+   u00206 : constant Version_32 := 16#1e74d07b#;
    pragma Export (C, u00206, "odb__chunk__test_dataS");
    u00207 : constant Version_32 := 16#269b1972#;
    pragma Export (C, u00207, "aunit__test_fixturesB");
@@ -475,9 +475,9 @@ package ada_main is
    pragma Export (C, u00219, "odb__object_id__test_data__tests__suiteB");
    u00220 : constant Version_32 := 16#b5626df9#;
    pragma Export (C, u00220, "odb__object_id__test_data__tests__suiteS");
-   u00221 : constant Version_32 := 16#b4c8d55e#;
+   u00221 : constant Version_32 := 16#d96fa2dd#;
    pragma Export (C, u00221, "odb__persistentB");
-   u00222 : constant Version_32 := 16#80a34b85#;
+   u00222 : constant Version_32 := 16#4b7b5f73#;
    pragma Export (C, u00222, "odb__persistentS");
    u00223 : constant Version_32 := 16#932a4690#;
    pragma Export (C, u00223, "system__concat_4B");
@@ -497,7 +497,7 @@ package ada_main is
    pragma Export (C, u00230, "system__pool_sizeS");
    u00231 : constant Version_32 := 16#0be0996c#;
    pragma Export (C, u00231, "odb__persistent__persistent_type_test_dataB");
-   u00232 : constant Version_32 := 16#7aafc139#;
+   u00232 : constant Version_32 := 16#b177d5cf#;
    pragma Export (C, u00232, "odb__persistent__persistent_type_test_dataS");
    u00233 : constant Version_32 := 16#7273bcdb#;
    pragma Export (C, u00233, "odb__persistent__persistent_type_test_data__persistent_type_testsB");
@@ -509,9 +509,9 @@ package ada_main is
    pragma Export (C, u00236, "odb__persistent__persistent_type_test_data__persistent_type_tests__suiteS");
    u00237 : constant Version_32 := 16#3175daf3#;
    pragma Export (C, u00237, "odb__persistent__test_dataB");
-   u00238 : constant Version_32 := 16#f0e3a482#;
+   u00238 : constant Version_32 := 16#3b3bb074#;
    pragma Export (C, u00238, "odb__persistent__test_dataS");
-   u00239 : constant Version_32 := 16#b4eb4f57#;
+   u00239 : constant Version_32 := 16#a5359be5#;
    pragma Export (C, u00239, "odb__persistent__test_data__testsB");
    u00240 : constant Version_32 := 16#f46df607#;
    pragma Export (C, u00240, "odb__persistent__test_data__testsS");

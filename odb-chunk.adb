@@ -26,4 +26,21 @@ package body Odb.Chunk is
       return Chunk_Access(T.To_Pointer(Chunk));
    end Address_To_Chunk;
 
+   -------------------
+   -- Get_Object_Id --
+   -------------------
+   function Get_Object_Id( Chunk : in Chunk_Access ) return Object_Id_Type is
+   begin
+      return Chunk.Id;
+   end Get_Object_Id;
+
+   -------------------
+   -- Set_Object_Id --
+   -------------------
+   procedure Set_Object_Id( Chunk : in Chunk_Access; Id : in Object_Id_Type ) is
+   begin
+      Chunk.Id := Id;
+   end Set_Object_Id;
+
+
 end Odb.Chunk;
